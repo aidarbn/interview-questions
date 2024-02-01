@@ -1,6 +1,6 @@
 # interview-questions
 
-This a base of interview questions for software engineer.a
+This a base of interview questions for a software engineer.
 
 ## How to add topic?
 
