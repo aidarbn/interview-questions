@@ -19,3 +19,12 @@ Answer:
 Source: [link](link)
 </details>
 ```
+
+Example:
+<details>
+<summary>Question</summary>
+
+Answer:
+
+Source: [link](link)
+</details>
