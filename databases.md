@@ -40,3 +40,29 @@ An index is a copy of selected columns of data, from a table, that is designed t
 
 [https://en.wikipedia.org/wiki/Database_index](https://en.wikipedia.org/wiki/Database_index)
 </details>
+
+<details>
+<summary>What are clustered and non-clustered indexes?</summary>
+
+**Non-clustered.** The data is present in arbitrary order, but the logical ordering is specified by the index. The data rows may be spread throughout the table regardless of the value of the indexed column or expression. The non-clustered index tree contains the index keys in sorted order, with the leaf level of the index containing the pointer to the record (page and the row number in the data page in page-organized engines; row offset in file-organized engines).
+
+In a non-clustered index,
+
+The physical order of the rows is not the same as the index order.
+The indexed columns are typically non-primary key columns used in JOIN, WHERE, and ORDER BY clauses.
+There can be more than one non-clustered index on a database table.
+
+**Clustered.** Clustering alters the data block into a certain distinct order to match the index, resulting in the row data being stored in order. Therefore, only one clustered index can be created on a given database table. Clustered indices can greatly increase overall speed of retrieval, but usually only where the data is accessed sequentially in the same or reverse order of the clustered index, or when a range of items is selected.
+
+Since the physical records are in this sort order on disk, the next row item in the sequence is immediately before or after the last one, and so fewer data block reads are required. The primary feature of a clustered index is therefore the ordering of the physical data rows in accordance with the index blocks that point to them. Some databases separate the data and index blocks into separate files, others put two completely different data blocks within the same physical file(s).
+
+[https://en.wikipedia.org/wiki/Database_index](https://en.wikipedia.org/wiki/Database_index)
+</details>
+
+<details>
+<summary>What are optimistic and pessimistic locks?</summary>
+
+Answer:
+
+Source: [link](link)
+</details>
